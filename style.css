@@ -1,0 +1,628 @@
+h1,
+h2,
+h3,
+h5,
+h6,
+.logo {
+  font-family: "Montserrat", sans-serif;
+}
+span,
+p {
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+html {
+  scroll-padding-top: 56px;
+  scroll-behavior: smooth;
+}
+.w-95 {
+  width: 95%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-fit {
+  width: fit-content;
+}
+
+/* !------- Start Nav --------- */
+
+nav .nav-link.active {
+  position: relative;
+}
+nav .nav-link::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  left: 5px;
+  transition: all 0.7s;
+}
+nav .nav-link.active::before {
+  background-color: rgb(15, 15, 15);
+  position: absolute;
+  content: "";
+  width: 85%;
+  height: 3px;
+  bottom: 3px;
+}
+.navbar-toggler {
+  border-radius: 0;
+  border: 0;
+  outline: none;
+}
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+.navbar-toggler:focus {
+  outline: 0;
+  box-shadow: 0 0 0;
+}
+.nav-link {
+  color: black;
+}
+/* !------- End Nav --------- */
+/* # -------- Start Home ---------- */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("bg.jpg");
+  min-height: calc(100vh - 56px);
+
+  background-position: center center;
+  background-size: cover;
+  & p {
+    font-family: "Montserrat", sans-serif;
+  }
+  & .content-header p::after {
+    content: "    |";
+    font-size: 50px;
+    animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+}
+@keyframes typing {
+  0% {
+    content: "";
+  }
+  2.7777777777777777% {
+    content: "D|";
+  }
+  5.555555555555555% {
+    content: "De|";
+  }
+  8.333333333333332% {
+    content: "Dev|";
+  }
+  11.11111111111111% {
+    content: "Deve|";
+  }
+  13.88888888888889% {
+    content: "Devel";
+  }
+  16.666666666666664% {
+    content: "Develo|";
+  }
+  19.444444444444443% {
+    content: "Develop|";
+  }
+  22.22222222222222% {
+    content: "Develope|";
+  }
+  25% {
+    content: "Developer|";
+  }
+  24.074074074074076% {
+    content: "Developer|";
+  }
+  25% {
+    content: "Develope|";
+  }
+  25.925925925925927% {
+    content: "Develop|";
+  }
+  26.851851851851855% {
+    content: "Develo|";
+  }
+  27.77777777777778% {
+    content: "Devel|";
+  }
+  28.703703703703706% {
+    content: "Deve|";
+  }
+  29.629629629629633% {
+    content: "Dev|";
+  }
+  30.555555555555557% {
+    content: "De|";
+  }
+  31.481481481481485% {
+    content: "|";
+  }
+  33.333333333333336% {
+    content: "";
+  }
+  36.458333333333336% {
+    content: "|";
+  }
+  39.583333333333336% {
+    content: "De|";
+  }
+  42.708333333333336% {
+    content: "Des|";
+  }
+  45.833333333333336% {
+    content: "Desi|";
+  }
+  48.958333333333336% {
+    content: "Desig|";
+  }
+  52.083333333333336% {
+    content: "Design|";
+  }
+  55.208333333333336% {
+    content: "Designe|";
+  }
+  58.333333333333336% {
+    content: "Designer|";
+  }
+  57.29166666666667% {
+    content: "Designer|";
+  }
+  58.333333333333336% {
+    content: "Designe|";
+  }
+  59.37500000000001% {
+    content: "Design|";
+  }
+  60.41666666666667% {
+    content: "Desig|";
+  }
+  61.458333333333336% {
+    content: "Desi";
+  }
+  62.50000000000001% {
+    content: "Des|";
+  }
+  63.54166666666667% {
+    content: "De|";
+  }
+  64.58333333333334% {
+    content: "|";
+  }
+  66.66666666666667% {
+    content: "";
+  }
+  68.58974358974359% {
+    content: "L|";
+  }
+  70.51282051282051% {
+    content: "La|";
+  }
+  72.43589743589745% {
+    content: "Lar|";
+  }
+  74.35897435897436% {
+    content: "Larr|";
+  }
+  76.28205128205128% {
+    content: "Larry|";
+  }
+  78.2051282051282% {
+    content: "Larry |";
+  }
+  80.12820512820514% {
+    content: "Larry |";
+  }
+  82.05128205128206% {
+    content: "Larry Da|";
+  }
+  83.97435897435898% {
+    content: "Larry Dan|";
+  }
+  85.8974358974359% {
+    content: "Larry Dani|";
+  }
+  87.82051282051282% {
+    content: "Larry Danie|";
+  }
+  89.74358974358975% {
+    content: "Larry Daniel|";
+  }
+  91.66666666666667% {
+    content: "Larry Daniels|";
+  }
+  91.02564102564102% {
+    content: "Larry Daniels|";
+  }
+  91.66666666666667% {
+    content: "Larry Daniel|";
+  }
+  92.3076923076923% {
+    content: "Larry Danie|";
+  }
+  92.94871794871794% {
+    content: "Larry  |";
+  }
+  93.58974358974359% {
+    content: "Larry Dan|";
+  }
+  94.23076923076923% {
+    content: "Larry Da|";
+  }
+  94.87179487179488% {
+    content: "Larry |";
+  }
+  95.51282051282051% {
+    content: "Larry| ";
+  }
+  96.15384615384616% {
+    content: "Larry|";
+  }
+  96.7948717948718% {
+    content: "Larr|";
+  }
+  97.43589743589743% {
+    content: "Lar|";
+  }
+  98.07692307692308% {
+    content: "La|";
+  }
+  98.71794871794872% {
+    content: "L|";
+  }
+  100% {
+    content: "|";
+  }
+}
+
+/* # -------- End Home ---------- */
+
+/* ? -------- Start About --------- */
+.progress {
+  --bs-progress-bar-bg: black;
+  height: 1.5rem;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+.about {
+  & h6 {
+    font-size: 13px;
+    margin-bottom: 0.1rem;
+  }
+  & span,
+  p {
+    color: #748182;
+    font-size: 15px;
+  }
+  & p {
+    line-height: 24px;
+  }
+  .my-3 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .button-contact {
+    border: 1px solid black !important;
+    transition: all 0.5s;
+    color: black;
+  }
+  .button-contact:hover {
+    background-color: black !important;
+    color: #fff;
+  }
+  .button-download {
+    transition: all 0.5s;
+  }
+  .button-download:hover {
+    background-color: transparent !important;
+    color: black !important;
+  }
+  .about-img {
+    position: relative;
+  }
+  .about-img::after {
+    content: "";
+    position: absolute;
+    background-image: url("dots.png");
+    width: 80%;
+    height: 90%;
+    left: -20px;
+    bottom: -30px;
+    z-index: -1;
+  }
+}
+/* ? -------- End About --------- */
+.bg-gray {
+  background-color: rgba(206, 201, 201, 0.2);
+}
+/* ^ -------- Start Services --------- */
+.Services {
+  background-color: #f7f7f7;
+
+  & p {
+    color: #748182;
+    font-size: 14px;
+  }
+  & .item i {
+    transition: all 0.5s;
+  }
+  & i {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 100vh;
+  }
+
+  & .item:hover i {
+    background-color: black;
+    color: rgba(236, 228, 228, 0.938);
+  }
+}
+/* ^ -------- End Services --------- */
+
+/* & -------- Start Works ---------- */
+
+.nav-pills .nav-link.active {
+  background-color: #fff;
+  position: relative;
+  color: black;
+}
+.nav-pills .nav-link::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 13px;
+  transition: all 0.7s;
+}
+.nav-pills .nav-link.active::before {
+  width: 60%;
+  height: 1.5px;
+  background-color: black;
+  bottom: 0px;
+  left: 16px;
+}
+.nav-pills .nav-link.active.all::before {
+  width: 45%;
+}
+.nav-pills .nav-link.active.graphic::before {
+  width: 70%;
+}
+.nav {
+  --bs-nav-link-hover-color: black;
+}
+.Works ul span {
+  font-weight: bold;
+}
+.layer-icons i {
+  font-size: 10px;
+}
+
+.first {
+  position: relative;
+  overflow: hidden;
+}
+.first::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border: #f0f0f2 10px solid;
+  top: 0%;
+  left: 0;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.first:hover::after {
+  opacity: 1;
+}
+.layer-content h6 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.6s;
+}
+.first:hover .layer-content h6 {
+  top: 40%;
+  transition: all 0.6s;
+  opacity: 1;
+}
+.layer-icons {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.6s;
+}
+.first:hover .layer-icons {
+  top: 50%;
+  opacity: 1;
+}
+.layer-icons i:hover {
+  background-color: #f0f0f2 !important;
+  color: black !important;
+  transition: all 0.5s;
+  border: 1px black solid !important;
+}
+/* & -------- End Works ---------- */
+
+/* * -------- Start Clients ---------- */
+.Clients,
+.Team {
+  background-color: #f7f7f7;
+  & p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #748182;
+    font-weight: lighter;
+    margin-block: 10px;
+  }
+  & h6 {
+    font-size: 15px;
+  }
+  & .client-content span {
+    font-size: 12px;
+    color: #748182;
+  }
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #748182;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.counter p {
+  color: #748182;
+}
+
+/* ? -------- Start Team ----------- */
+.card-body {
+  background-color: #5b5b5b;
+  z-index: 2;
+}
+
+.the-card {
+  position: relative;
+}
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  transition: all 0.5s;
+  padding: 7px;
+}
+.team-icons {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+.card:hover .back {
+  transform: rotateY(-180deg);
+  opacity: 1;
+}
+.card img {
+  transition: all 0.5s;
+}
+.card:hover img {
+  scale: 1.1;
+}
+
+.team-icons i:hover {
+  background-color: #fff !important;
+  border: black 1px solid !important;
+  color: black !important;
+}
+
+.title-h3 {
+  position: relative;
+  z-index: 1;
+}
+.title-h3::after {
+  content: "";
+  position: absolute;
+  background-image: url("dots.png");
+  width: 20%;
+  height: 100%;
+  left: 40%;
+  bottom: -10px;
+  z-index: -1;
+}
+/* ? -------- End Team ----------- */
+
+/* ! -------- Start Contact ---------- */
+footer i {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 100vh;
+}
+.footer-content i {
+  transition: all 0.5s;
+}
+
+.footer-content:hover i {
+  background-color: black;
+  color: rgba(236, 228, 228, 0.938);
+  /* transition: all 1s; */
+}
+.form-control:focus {
+  background-color: rgba(206, 201, 201, 0.2);
+  border: #748182;
+  outline: #748182;
+  box-shadow: 0 0 0 #748182;
+}
+textarea {
+  resize: none;
+}
+.button-download:hover {
+  background-color: transparent;
+  color: black;
+}
+.footer p {
+  font-size: 14px;
+  color: #6e7f6b;
+}
+
+/* ! -------- End Contact ---------- */
+/* media */
+
+@media screen and (max-width: 574px) {
+  .content-header p,
+  h5 {
+    font-size: 25px !important;
+  }
+  .content-header p::after {
+    font-size: 20px !important;
+  }
+  .Services p {
+    max-width: 400px;
+    margin: auto;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+  nav .nav-link::before {
+    left: 44.5%;
+  }
+  nav .nav-link.active::before {
+    width: 11%;
+  }
+  .p-address {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .works-list {
+    font-size: 10px;
+  }
+  .nav-link {
+    font-size: 10px !important;
+  }
+}
+@media screen and (min-width: 574px) and (max-width: 970px) {
+  nav .nav-link::before {
+    left: 46%;
+  }
+  nav .nav-link.active::before {
+    width: 8%;
+  }
+}
